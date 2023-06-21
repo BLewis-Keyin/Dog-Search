@@ -4,10 +4,11 @@ import ImageList from './ImageList';
 
 const App = () => {
   const [selectedBreed, setSelectedBreed] = useState('');
-  const [numImages, setNumImages] = useState(1);
+  const [numImages, setNumImages] = useState('');
 
-  const handleSearch = (breed) => {
+  const handleSearch = (breed, numImages) => {
     setSelectedBreed(breed);
+    setNumImages(numImages);
   };
 
   return (

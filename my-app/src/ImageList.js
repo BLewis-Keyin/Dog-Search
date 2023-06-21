@@ -10,10 +10,10 @@ const ImageList = ({ selectedBreed, numImages }) => {
       setLoading(true);
 
       try {
-        const response = await fetch('dog.ceo/api/breed/{select-a-breed}{number-of-images-to-return}');
+        const response = await fetch(`https://dog.ceo/api/breed/${selectedBreed}/images/random/${numImages}`);
         const data = await response.json();
         console.log (data)
-        setImages(data);
+        setImages(data.message);
       } catch (error) {
         setError('Error fetching images');
       }
@@ -36,9 +36,9 @@ const ImageList = ({ selectedBreed, numImages }) => {
 
   return (
     <div className="image-list">
-      {images.map((image) => (
-        <div key={image.id} className="image-card">
-          <img src={image.url} alt="Dog" className="image" />
+      {images.map((image, index) => (
+        <div key={index} className="image-card">
+          <img src={image} alt="Dog" className="image" />
         </div>
       ))}
     </div>
