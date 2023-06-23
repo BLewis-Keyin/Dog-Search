@@ -10,7 +10,7 @@ const App = () => {
     setSelectedBreed(breed);
     setNumImages(numImages);
   };
-    //this work//
+  
   return (
     <div>
       <SearchBar onSearch={handleSearch} onNumImagesChange={setNumImages} />
