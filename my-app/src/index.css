@@ -108,3 +108,15 @@ body {
   background-color: gray;
   height: 100px
 }
+
+h1 {
+  font-weight: bold;
+  padding-top: 25px;
+  padding-left: 10px;
+}
+
+.dog-bone-png-dog {
+position: fixed;
+left: 225px;
+top: 5px;
+}
