@@ -6,6 +6,12 @@
   padding: 0;
 }
 
+.search-bar {
+  z-index: 1;
+  height: auto;
+  width: auto;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -63,4 +69,42 @@ body {
 
 .task.reminder {
   border-left: 5px solid green;
+}
+
+.main {
+  display: flexbox;
+  width: 1024;
+  margin:auto
+}
+
+.label {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.label .div-wrapper {
+  border: 0px none;
+  height: 35px;
+  width: 171px;
+}
+
+.label .text-wrapper {
+  color: #ffffff;
+    font-family: "Iowan Old Style-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    left: 1341px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 946px;
+    width: 171px;
+}
+
+.main .text-wrapper {
+  background-color: gray;
+  height: 100px
 }
