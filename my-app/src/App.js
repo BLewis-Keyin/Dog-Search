@@ -16,30 +16,32 @@ const App = () => {
   return (
     <div>
       <div className="main">
-        <div className="group">
-          <h1 className="head-text-wrapper">Dog Search</h1>
-                      <img
+        <div className="background">
+          <ImageList selectedBreed={selectedBreed} numImages={numImages} />
+          <div className="group">
+            <h1 className="head-text-wrapper">Dog Search</h1>
+            <img
             className="dog-bone-png-dog"
             alt="Dog bone png dog"
             src={DogBone}
-          />
-        </div>
-        <div className="background">
+            />
+          </div>
         <div>
           <img
             className="rectangle-bar"
             alt="rectangle"
             src={Rectangle}
-            />
-            </div>
+          />
+        </div>
         <SearchBar onSearch={handleSearch} onNumImagesChange={setNumImages}/>
         <div className="label">
           <div className="div-wrapper">
             <div className="text-wrapper">DogSearchLLC©</div>
           </div>
-        </div>
           </div>
-          <ImageList selectedBreed={selectedBreed} numImages={numImages} />
+          
+          </div>
+          
       </div>
       </div>
       

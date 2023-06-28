@@ -107,15 +107,17 @@ top: 5px;
 
 .rectangle-bar {
   position: absolute;
-  width: 100%;
+  width: 100.41%;
   z-index: 1 ;
+  left: -7px;
+  overflow:hidden
 }
 
 .background {
   position: absolute;
   z-index: -2;
   background-attachment: fixed;
-  min-height: 110vh;
+  height: 100vh;
   min-width: 100%;
   background-repeat: no-repeat;
 background-position: center;
