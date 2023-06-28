@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import SearchBar from "./SearchBar";
 import ImageList from "./ImageList";
 import DogBone from "./images/DogBone.png"
-
+import Rectangle from "./images/rectangle-3.svg"
+import Background from "./images/image_background.png"
 const App = () => {
   const [selectedBreed, setSelectedBreed] = useState("");
   const [numImages, setNumImages] = useState("");
@@ -16,13 +17,21 @@ const App = () => {
     <div>
       <div className="main">
         <div className="group">
-          <h1 className="text-wrapper">Dog Search</h1>
+          <h1 className="head-text-wrapper">Dog Search</h1>
                       <img
             className="dog-bone-png-dog"
             alt="Dog bone png dog"
             src={DogBone}
           />
         </div>
+        <div className="background">
+        <div>
+          <img
+            className="rectangle-bar"
+            alt="rectangle"
+            src={Rectangle}
+            />
+            </div>
         <SearchBar onSearch={handleSearch} onNumImagesChange={setNumImages}/>
         <div className="label">
           <div className="div-wrapper">
@@ -31,7 +40,8 @@ const App = () => {
         </div>
           </div>
           <ImageList selectedBreed={selectedBreed} numImages={numImages} />
-        </div>
+      </div>
+      </div>
       
   );
 };

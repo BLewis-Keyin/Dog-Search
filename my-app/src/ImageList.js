@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import AppCss from './App.css'
 
 const ImageList = ({ selectedBreed, numImages }) => {
   const [images, setImages] = useState([]);
@@ -38,7 +39,7 @@ const ImageList = ({ selectedBreed, numImages }) => {
     <div className="image-list">
       {images.map((image, index) => (
         <div key={index} className="image-card">
-          <img src={image} alt="Dog" className="image" />
+          <img src={image} alt="Dog" className="dogimage" />
         </div>
       ))}
     </div>
