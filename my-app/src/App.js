@@ -3,11 +3,15 @@ import SearchBar from "./SearchBar";
 import ImageList from "./ImageList";
 import DogBone from "./images/DogBone.png"
 import Rectangle from "./images/rectangle-3.svg"
+
+// State variables to hold the selected breed and number of images
 const App = () => {
   const [selectedBreed, setSelectedBreed] = useState("");
   const [numImages, setNumImages] = useState("");
-
+ 
+  // Event handler for search  
   const handleSearch = (breed, numImages) => {
+      // Update the selected breed and number of images in state
     setSelectedBreed(breed);
     setNumImages(numImages);
   };
